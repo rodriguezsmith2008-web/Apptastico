@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #444;
+}
+
+header {
+  background: #45515e;
+  min-height: 340px;
+  position: relative;
+}
+
+.navegador {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.2rem;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a.home {
+  background: #3b4a59;
+  box-shadow: inset 1px 1px 5px black,
+  0.5px 0.5px 3px rgb(177, 177, 177);         
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 8px 18px;
+  border-radius: 20px;
+}
+
+.div_celular {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8%;
+  min-height: 340px;
+}
+
+.celular-img {
+  width: 320px;
+  margin-right: 40px;
+}
+
+.text_cel {
+  color: #fff;
+  max-width: 540px;
+  margin-bottom: 50px;
+}
+
+.text_cel h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+.text_cel p {
+  font-size: 1.1rem;
+}
+
+.text_cel{
+  color: rgb(255, 255, 255);
+}
+
+.textico{
+  color: rgb(136, 136, 136);
+}
+
+.div_compu {
+  margin-top: 25px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.div_compu .texto_chi {
+  display: flex;
+  background: #3fa9f5;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: inset 0 1px 2px #c1e4fd, 0 10px 10px rgb(58, 58, 58);
+  color: #fff;
+  padding: 12px 42px;
+  width: 200px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.div_compu .compu {
+  background: none;
+  color: #fff;
+  width: 170px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid white;
+  gap: 13px;
+  height: 23px;
+}
+
