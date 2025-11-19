@@ -4,9 +4,10 @@ body {
   color: #444;
 }
 
+
 header {
   background: #45515e;
-  min-height: 340px;
+  min-height: 240px;
   position: relative;
 }
 
@@ -31,8 +32,7 @@ nav {
 
 nav a.home {
   background: #3b4a59;
-  box-shadow: inset 1px 1px 5px black,
-  0.5px 0.5px 3px rgb(177, 177, 177);         
+  box-shadow: inset 1px 1px 5px black, 0.5px 0.5px 3px rgb(177, 177, 177);
 }
 
 nav a {
@@ -47,34 +47,35 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 8%;
   min-height: 340px;
 }
 
 .celular-img {
   width: 320px;
-  margin-right: 40px;
+  margin-right: 80px;
+  height: 440px;
 }
 
 .text_cel {
   color: #fff;
   max-width: 540px;
-  margin-bottom: 50px;
+
 }
 
 .text_cel h1 {
   font-size: 2.8rem;
   font-weight: bold;
 }
+
 .text_cel p {
   font-size: 1.1rem;
 }
 
-.text_cel{
+.text_cel {
   color: rgb(255, 255, 255);
 }
 
-.textico{
+.textico {
   color: rgb(136, 136, 136);
 }
 
@@ -106,8 +107,8 @@ nav a {
   display: flex;
   align-items: center;
   border-bottom: 1px solid white;
-  gap: 13px;
   height: 23px;
+  font-size: 18px;
 }
 
 .empresas {
@@ -150,7 +151,8 @@ nav a {
   color: #888;
   margin-bottom: 18px;
 }
-.servicio img{
+
+.servicio img {
   margin-bottom: 20px;
 }
 
@@ -158,7 +160,7 @@ nav a {
   background: #5181c9;
   border: 1px solid #486ea8;
   box-shadow: inset 0 1px 5px white,
-  inset 5px 5px 50px #406499;
+    inset 5px 5px 50px #406499;
   color: #e9e9e9;
   border-radius: 5px;
   padding: 20px 44px;
@@ -183,7 +185,8 @@ nav a {
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
 }
-.imagenes_1 h2{
+
+.imagenes_1 h2 {
   gap: 10px;
   font-size: 20px;
 }
@@ -215,6 +218,7 @@ nav a {
   border-radius: 8px;
   min-width: 260px;
 }
+
 .blog_posterior_detalle {
   font-size: 15px;
   display: flex;
@@ -227,35 +231,39 @@ nav a {
   margin-top: 4px;
 }
 
-.imagen_wi img{
+.imagen_wi img {
   margin-right: 10px;
 }
 
-.text_debajo a{
+.text_debajo a {
   text-decoration: none;
   color: #3fa9f5;
 }
 
-.Older_entries a{
+.Older_entries a {
   text-decoration: none;
   color: #3fa9f5;
 }
-.twitter span{
+
+.twitter span {
   color: rgb(110, 110, 110);
   font-weight: bold;
 }
+
 .twitter {
   background: #fff;
   border-radius: 8px;
   padding: 24px 24px 18px 24px;
   min-width: 260px;
 }
+
 .blog h3 {
   font-size: 1.1rem;
   margin-bottom: 18px;
   color: #5d6d7e;
-  
+
 }
+
 .blog_posterior {
   display: flex;
   gap: 14px;
@@ -304,9 +312,10 @@ footer {
   align-items: center;
 }
 
-footer h1{
+footer h1 {
   font-size: 15px;
 }
+
 .redes img {
   width: 34px;
 }
@@ -317,4 +326,278 @@ footer .redes {
 
 .redes {
   margin-top: 15px;
+}
+
+
+
+@media (max-width:1279px) {
+  .text_cel h1 {
+    font-size: 41px;
+  }
+
+  .imagenes {
+    gap: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+
+@media (max-width:920px) {
+  .servicios {
+    gap: 20px;
+  }
+
+  .text_cel {
+    max-width: 340px;
+  }
+
+  .text_cel h1 {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+
+  .text_cel p {
+    font-size: 0.6rem;
+  }
+
+  .div_compu .texto_chi {
+    padding: 8px 10px;
+    width: 160px;
+    font-size: 17px;
+    text-decoration: none;
+  }
+
+  .div_compu .compu {
+    width: 180px;
+    height: 23px;
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .navegador {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .imagenes_galeria {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .div_compu {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .celular-img {
+    display: flex;
+    margin-top: 110px;
+    margin: 0px 60px 0px 30px;
+  }
+}
+
+
+@media (max-width:768px) {
+  .text_cel {
+    max-width: 500px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .div_celular {
+    flex-direction: column;
+  }
+
+  .navegador {
+    flex-wrap: wrap;
+  }
+
+  .servicios {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .imagenes_galeria,
+  .contenedor_blog,
+  .div_compu,
+  .empresas {
+    flex-wrap: wrap;
+  }
+
+  .celular-img {
+    width: 220px;
+    height: 330px;
+  }
+
+  .imagenes {
+    align-items: center;
+  }
+
+  .imagenes_1 {
+    display: flex;
+  }
+
+  .imagenes_1 img {
+    height: 20px;
+  }
+
+  footer h1 {
+    font-size: 15px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  nav a {
+    font-size: 0.6rem;
+    padding: 4px 7px;
+    border-radius: 20px;
+  }
+
+  .text_cel h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+
+  .text_cel p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .div_compu .texto_chi {
+    padding: 8px 15px;
+    width: 160px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .div_compu .compu {
+    width: 200px;
+    height: 23px;
+    font-size: 21px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+}
+
+
+@media (max-width:600px) {
+  .logo {
+    width: 90px;
+  }
+
+  nav a {
+    font-size: 0.5rem;
+    padding: 4px 5px;
+    border-radius: 20px;
+  }
+
+  .text_cel h1 {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+
+  .text_cel p {
+    font-size: 0.7rem;
+  }
+}
+
+
+@media (max-width:480px) {
+
+  .navegador {
+    flex-direction: row;
+  }
+  .navegador,
+  .div_celular,
+  .contenedor_blog {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 4%;
+  }
+
+  .navegador nav {
+    flex-direction: column;
+    margin: 15px 0px 5px;
+
+  }
+
+  .celular_img {
+    margin: 0 0 20px 0;
+    max-width: 90vw;
+    top: 20px;
+  }
+
+  .div_compu {
+    flex-direction: row;
+  }
+
+  .imagenes_galeria {
+    flex-direction: column;
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .imagenes {
+    align-items: center;
+  }
+
+  .servicios {
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 0 10px 0;
+    align-items: center;
+  }
+
+  .imagenes_1 img {
+    height: 30px;
+  }
+
+  .empresas {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  footer h1 {
+    font-size: 10px;
+  }
+
+  .div_compu .texto_chi {
+    padding: 8px 6px;
+    width: 80px;
+    font-size: 11px;
+    text-decoration: none;
+  }
+
+  .div_compu .compu {
+    width: 160px;
+    height: 23px;
+    font-size: 15px;
+  }
+  
+  h3 {
+    font-size: 17px;
+  }
+}
+
+
+@media (min-width:1280px) {
+  .text_cel h1 {
+    font-size: 3rem;
+  }
+
+  .servicios {
+    gap: 50px;
+  }
 }
