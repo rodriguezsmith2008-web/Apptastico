@@ -516,7 +516,8 @@ footer .redes {
 
 @media (max-width:480px) {
 
-  .navegador {
+  .nav {
+    display: flex;
     flex-direction: row;
   }
   .navegador,
@@ -528,7 +529,7 @@ footer .redes {
   }
 
   .navegador nav {
-    flex-direction: column;
+
     margin: 15px 0px 5px;
 
   }
